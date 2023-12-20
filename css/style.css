@@ -27,9 +27,7 @@ background-color:#151925 ;
 }
 .header {
   color: rgb(255, 255, 255);
-  margin-top: 10px;
   font: 800 24px 'Sen', sans-serif;
-  
 }
 .nav {
   display: flex;
@@ -52,12 +50,11 @@ background-color:#151925 ;
   text-decoration: none;
 }
 .header-text{
-margin-top: 10%;
-font-size: 30px;
+font-size: 80px;
 font-family: 'Sen', sans-serif;
 color:#ffffff;
 margin-top:90px;
-margin-left: -79%;
+position: relative;
 }
 .header-text h1{
 font-size: 60px;
@@ -82,7 +79,7 @@ body{
   place-items:center;
   font-family: "Arial", sans-serif;
 }
-
+/* download knop */
 .download-button{
   background-color: DodgerBlue;
   color: white;
@@ -90,19 +87,19 @@ body{
   font-size: 2rem;
   text-decoration: none;
   border-radius:5px;
-  margin-left: -83%;
-
+  margin-top: 80px;
+  position: center;
+  font-weight: bold;
 }
-
 .download-button:hover {
   background-color: RoyalBlue;
 }
-
 *{
 margin: 0px;
 padding: 0px;
 box-sizing:border-box;
 }
+/* foto */
 .image{
 width: 100%;
 height: 100vh;
@@ -118,5 +115,50 @@ border: 10px solid #ffffff;
 margin-right: -80%;
 margin-top: -55%;
 }
-
-
+footer{
+position: relative;
+width: 100%;
+height: 400px;
+background: #3b369f;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.name{
+font-weight: bolder;
+background-color: white;
+}
+footer p:nth-child(1){
+font-size: 30px;
+color: white;
+margin-bottom: 20px;
+}
+footer p:nth-child(2){
+color: white;
+font-size: 15px;
+width: 500px;
+text-align: center;
+line-height: 25px;
+font-weight: bolder;
+}
+.socials{
+  display: flex;
+}
+.socials a{
+width: 45px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #fffafa;
+border-radius: 50px;
+margin: 20px 10px;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+.socials a:hover{
+transform: scale(1.3);
+transition: .3s;
+}
